@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Fineas's CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Fineas Berende</h1>
+
+        <img src="1.jpg" alt="Selfie" height="50">
+
+        <h2>WebDeveloper</h2>
+
+
+        <p id="motto" style="text-align: right; color:red;"> Despre mine:Programator</p>
+
+        <ul id="Top-menu-bar">
+            <li><a href="#" onclick="showHomePage()">Home</a></li>
+            <li><a href="#" onclick="showSkillsPage();">Skills</a></li>
+            <li><a href="#" onclick="showLanguagesPage();">Languages</a></li>
+            <li><a href="#" onclick="showProjectsPage();">Projects</a></li>
+        </ul>
+    </header>
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                    <div>
+                        <label for="name">Youre Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" required>
+                    <button>Send request</button>
+                </form>
+            </section>
+            <section>Menu 2</section>
+        </div>
+
+        <div id="main">
+
+            <div id="home" class="page">
+                <h2>Home</h2>
+                <p>About me, as software developer</p>
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+
+                <h2>Skills</h2>
+
+                <ul>
+                    <li class="favorite-skill">HTML</li>
+                    <li>CSS</li>
+                    <li class="favorite-skill">JS</li>
+
+                </ul>
+
+            </div>
+            <div id="languages" class="page" style="display: none;">
+                <h2>Languages</h2>
+
+                <table border="1">
+                    <tr>
+                        <th>Language</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Romanian</td>
+                        <td>Native</td>
+                    </tr>
+                    <tr>
+
+                        <td>English</td>
+                        <td>Good</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                <p>About my projects. Comming soon</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <a href="https://fasttrackit.org" target="_blank">fasttrackit</a>
+    </footer>
+
+    <script>
+        var name = "Fini"
+        console.log("Salut, bine ai venit" + name);
+        console.log(name + " te rog sa vi ...")
+        console.info(4 + 3)
+
+        var motto = document.getElementById("motto")
+        motto.style.color = 'yellowgreen'
+
+    </script>
+
+    <script src="functions.js"></script>
+
+
+</body>
+
+</html>
