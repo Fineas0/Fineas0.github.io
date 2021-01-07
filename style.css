@@ -68,6 +68,20 @@ header {
 }
 
 
+footer {
+    text-align: center;
+    background-color: #334455;
+    color: #f3f2ef;
+    padding: 7px;
+}
+
+
+footer a {
+    color: #f3f2ef;
+    text-decoration: none;
+}
+
+
 
 #motto{
     color:gold;
