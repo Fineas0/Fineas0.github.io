@@ -130,9 +130,15 @@ td{
 
 #top-menu-bar a{
     text-decoration: none;
-    padding: 5 15 5 15;
+    padding: 10px 15px 10px 15px;
     color: #ffffff;    
+    display: inline-block;
 }
+
+#top-menu-bar a::before{
+    margin-right: 5px;
+}
+
 
 #top-menu-bar a:hover{
     color: #334455;
