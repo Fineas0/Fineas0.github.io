@@ -39,6 +39,37 @@ header {
     flex: 1;
 }
 
+.header-wraper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.my-picture {
+    padding: 5px;
+    width: 108px;
+    height: 108px;
+}
+
+.my-picture img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.header-info {
+    flex: 1;
+    padding: 10px;
+}
+
+#job-title {
+    color: #334455;
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 #content {
     flex: 5;
     display: flex;
@@ -85,8 +116,10 @@ td{
 
 #top-menu-bar{
     text-align: center;
-    background-color: #334455;
-    color: #000000;
+    background-color: #266faa;
+    color: #ffffff;
+    margin: 5px;
+    padding: 5px;
 }
 
 #top-menu-bar li{
@@ -97,7 +130,7 @@ td{
 
 #top-menu-bar a{
     text-decoration: none;
-    padding: 0 15 0 15;
+    padding: 5 15 5 15;
     color: #ffffff;    
 }
 

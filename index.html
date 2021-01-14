@@ -1,27 +1,35 @@
 <html>
 
 <head>
-    <title>Fineas's CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header>
-        <h1>Fineas Berende</h1>
-
-        <img src="1.jpg" alt="Selfie" height="50">
-
-        <h2>WebDeveloper</h2>
-
-
-        <p id="motto" style="text-align: right; color:red;"> Despre mine:Programator</p>
+    <head>
+        <title>Fineas's CV</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+    
+        <header>
+            <div class="header-wraper">
+                <div class="my-picture">
+                    <img src="1.jpg" alt="Selfie" height="50">
+                </div>
+    
+                <div class="header-info">
+                    <h1>Fineas Berende</h1>
+                    <h2 id="job-title">WebDeveloper</h2>
+                </div>
+            </div>
 
         <ul id="Top-menu-bar">
-            <li><a href="#" onclick="showHomePage()">Home</a></li>
-            <li><a href="#" onclick="showSkillsPage();">Skills</a></li>
-            <li><a href="#" onclick="showLanguagesPage();">Languages</a></li>
-            <li><a href="#" onclick="showProjectsPage();">Projects</a></li>
+            <li><i class="fa fa-university" aria-hidden="true"></i>
+                <a href="#" onclick="showHomePage()">Home</a></li>
+            <li><i class="fa fa-star-o" aria-hidden="true"></i>
+                <a href="#" onclick="showSkillsPage();">Skills</a></li>
+            <li><i class="fa fa-user-o" aria-hidden="true"></i>
+                <a href="#" onclick="showLanguagesPage();">Languages</a></li>
+            <li><i class="fa fa-trophy" aria-hidden="true"></i>
+                <a href="#" onclick="showProjectsPage();">Projects</a></li>
         </ul>
     </header>
     <section id="content">
