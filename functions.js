@@ -6,7 +6,6 @@ function hide(id){
 function show(id){
     var el = document.getElementById(id); 
     el.style.display = '';
-
 }
 
 
