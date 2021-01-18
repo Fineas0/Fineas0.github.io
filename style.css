@@ -80,6 +80,10 @@ header {
     flex: 1;
 }
 
+#side-menu button {
+    cursor: pointer;
+}
+
 #main {
     flex: 3;
 }
@@ -143,4 +147,14 @@ td{
 #top-menu-bar a:hover{
     color: #334455;
     background-color: #e0bf00;
+}
+
+.search-button{
+    float: right;
+    margin: 10px;
+    padding: 2px;
+    color: #000000 ;
+    cursor:help;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
 }
