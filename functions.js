@@ -9,12 +9,13 @@ function show(id) {
 }
 
 function hideAllPages() {
-    var pages = document.querySelectorAll(".page");
+    var pages = Array.from(document.querySelectorAll(".page"));
+    var pageIds = pages.map(function(page){
+        return page.id
+    });
 
-    for (var i = 0; i < pages.length; i++) {
-        var page = pages[i];
-        hide(page.id);
-       // hide(pagesIds[i]);
+    for (var i = 0; i < pageIds.length; i++) {
+       hide(pageIds[i]);
     }   
 }
 
