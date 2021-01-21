@@ -15,26 +15,10 @@ function hideAllPages() {
         var page = pages[i];
         hide(page.id);
        // hide(pagesIds[i]);
-    }
+    }   
 }
 
-function showHomePage() {
+function showPage(pageId) {
     hideAllPages()
-    show('home')
+    show(pageId)
 }
-
-function showSkillsPage() {
-    hideAllPages()
-    show('skills');
-}
-
-function showLanguagesPage() {
-    hideAllPages()
-    show('languages');
-}
-
-function showProjectsPage() {
-    hideAllPages()
-    show('projects');
-}
-
