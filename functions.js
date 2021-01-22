@@ -16,7 +16,8 @@ function hideAllPages() {
 
     pageIds.forEach(function(pageId){
         hide(pageId);
-    });
+    });   
+}
 
 function showPage(pageId) {
     hideAllPages()
