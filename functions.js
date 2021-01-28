@@ -37,13 +37,13 @@ showPage("skills");
 var allSkills = [
     { name: "HTML", favorite: true, endorsments: 5 },
     { name: "CSS", favorite: false, endorsments: 5 },
-    { name: "JS", favorite: true, endorsments: 5 },
+    { name: "JS", favorite: true, endorsments: 7 },
 
 ];
 // TODO class='favorite-skills'
 
 var allSkillsHtml = allSkills.map(function(skill){
-    return `<li>${skill.name}</li>`;
+    return `<li>${skill.name} <span>(${skill.endorsments})</span></li>`;
 });
 
 var skillsEl= document.querySelector("#skills ul");
