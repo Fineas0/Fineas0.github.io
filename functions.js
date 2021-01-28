@@ -10,10 +10,9 @@ function show(id) {
 
 function hideAllPages() {
     var pages = Array.from(document.querySelectorAll(".page"));
-    pages.forEach(function(page){
-         hide(page.id);
+    pages.forEach(function (page) {
+        hide(page.id);
     });
-      
 }
 
 function showPage(pageId) {
@@ -22,7 +21,7 @@ function showPage(pageId) {
 }
 
 function listenMenuClicks() {
-    document.addEventListener("click", function(e){
+    document.addEventListener("click", function (e) {
         var link = e.target;
         if (link.matches("#top-menu-bar a")) {
             var id = link.innerHTML.toLowerCase();
@@ -32,3 +31,12 @@ function listenMenuClicks() {
 }
 
 listenMenuClicks();
+
+var allSkills = `
+    <li class="favorite-skill">HTML</li>
+    <li>CSS</li>
+    <li class="favorite-skill">JS</li>
+`;
+
+var skillsEl= document.querySelector("#skills ul");
+skillsEl.innerHTML = allSkills;
