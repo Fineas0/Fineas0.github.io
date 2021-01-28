@@ -10,13 +10,10 @@ function show(id) {
 
 function hideAllPages() {
     var pages = Array.from(document.querySelectorAll(".page"));
-    var pageIds = pages.map(function(page){
-        return page.id
+    pages.forEach(function(page){
+         hide(page.id);
     });
-
-    pageIds.forEach(function(pageId){
-        hide(pageId);
-    });   
+      
 }
 
 function showPage(pageId) {
