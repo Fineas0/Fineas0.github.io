@@ -34,19 +34,24 @@ listenMenuClicks();
 
 showPage("skills");
 
-var allSkills = [
-    { name: "HTML", favorite: true, endorsments: 5 },
-    { name: "CSS", favorite: false, endorsments: 5 },
-    { name: "JS", favorite: true, endorsments: 7 },
-];
+var allSkills = [];
 
-function showSkills(skills){
-    var allSkillsHtml = skills.map(function(skill){
-        // TODO class='favorite-skills'
+function showSkills(skills) {
+    var allSkillsHtml = skills.map(function (skill) {
         return `<li>${skill.name} <span>(${skill.endorsments})</span></li>`;
     });
-    
-    var skillsEl= document.querySelector("#skills ul");
+
+    var skillsEl = document.querySelector("#skills ul");
     skillsEl.innerHTML = allSkillsHtml.join("");
 }
-showSkills(allSkills);
+
+fetch("skills.json")
+    . then(function(r){
+        return r.json();
+})
+.then(function(skills){
+    console.warn("done", skills)
+    showSkills(skills)
+});
+
+// showSkills(allSkills);

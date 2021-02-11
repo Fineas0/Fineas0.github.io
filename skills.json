@@ -1,0 +1,17 @@
+[
+    {
+        "name": "HTML",
+        "favorite": true,
+        "endorsments": 5
+    },
+    {
+        "name": "CSS",
+        "favorite": false,
+        "endorsments": 5
+    },
+    {
+        "name": "JS",
+        "favorite": true,
+        "endorsments": 8
+    }
+]
