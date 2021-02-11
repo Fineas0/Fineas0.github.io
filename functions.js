@@ -4,8 +4,7 @@ function hide(id) {
 }
 
 function show(id) {
-    var el = document.getElementById(id);
-    el.style.display = '';
+    var el = document.getElementById(id).style.display = "";
 }
 
 function hideAllPages() {
@@ -38,7 +37,8 @@ var allSkills = [];
 
 function showSkills(skills) {
     var allSkillsHtml = skills.map(function (skill) {
-        return `<li>${skill.name} <span>(${skill.endorsments})</span></li>`;
+        var cls = skill.favorite ? "favorite-skill" : ""
+        return `<li class = "${cls}">${skill.name} <span>(${skill.endorsments})</span></li>`;
     });
 
     var skillsEl = document.querySelector("#skills ul");
@@ -50,7 +50,6 @@ fetch("skills.json")
         return r.json();
 })
 .then(function(skills){
-    console.warn("done", skills)
     showSkills(skills)
 });
 
