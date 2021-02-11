@@ -2,16 +2,16 @@
     {
         "name": "HTML",
         "favorite": true,
-        "endorsments": 5
+        "endorsments": 7
     },
     {
         "name": "CSS",
         "favorite": false,
-        "endorsments": 5
+        "endorsments": 6
     },
     {
         "name": "JS",
         "favorite": true,
-        "endorsments": 8
+        "endorsments": 9
     }
 ]
